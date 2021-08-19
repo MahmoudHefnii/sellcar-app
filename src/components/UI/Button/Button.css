@@ -1,0 +1,33 @@
+.ButtonContainer {
+  padding: 12px 33px 15px 31px;
+  border-radius: 5px;
+  background-color: #ec1c24;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ButtonContainer span {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+}
+
+.ButtonContainer img {
+  transform: translateX(15px);
+}
+
+div[lang ='ar'] .ButtonContainer img {
+  transform: translateX(-15px);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .ButtonContainer span {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,36 @@
+.ServicesSection {
+     background-color: #f6fbff;
+     padding: 50px 10%;
+}
+
+.ServicesContent {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 40px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+     .ServicesSection {
+          padding: 50px 25px;
+     }
+
+     .ServicesContent {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-row-gap: 30px;
+     }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+     .ServicesContent {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-row-gap: 30px;
+     }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+     .ServicesContent {
+          grid-column-gap: 20px;
+     }
+}

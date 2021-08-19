@@ -1,0 +1,64 @@
+.PreperationSection {
+     background-color: #fff;
+     padding: 50px 10%;
+}
+
+.PreperationContent {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-column-gap: 20px;
+}
+
+.PreperationItems {
+     list-style: none;
+}
+
+.PreperationItem {
+     font-size: 18px;
+     font-weight: 300;
+     font-stretch: normal;
+     font-style: normal;
+     text-align: left;
+     color: #595f6f;
+     display: flex;
+     align-items: baseline;
+     margin-bottom: 22px;
+}
+
+.Circle {
+     background-color: #ec1c24;
+     font-weight: bold;
+     width: 10px;
+     height: 10px;
+     margin-right: 20px;
+     display: block;
+     border-radius: 50%;
+     padding: 5px;
+}
+
+div[lang="ar"] .Circle {
+     margin-right: unset;
+     margin-left: 20px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+     .PreperationSection {
+          padding: 40px;
+     }
+
+     .PreperationItem {
+          font-size: 15px;
+     }
+
+     .PreperationContent {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+     }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+     .PreperationContent {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+     }
+}

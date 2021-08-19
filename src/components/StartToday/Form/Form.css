@@ -1,0 +1,240 @@
+.InquiryForm {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: left;
+}
+
+.InquiryTitle {
+     font-size: 20px;
+     font-weight: 500;
+     font-stretch: normal;
+     font-style: normal;
+     text-align: left;
+     color: #595f6f;
+     margin-bottom: 30px;
+}
+
+.InquiryContactTitle {
+     font-size: 20px;
+     font-weight: 500;
+     font-stretch: normal;
+     font-style: normal;
+     text-align: left;
+     color: #595f6f;
+     margin-bottom: 30px;
+     margin-top: 30px;
+}
+
+.InquiryFormRow {
+     margin-bottom: 10px;
+     width: 100%;
+     text-align: left;
+}
+
+.InquiryFormLabel {
+     display: inline-block;
+     font-size: 16px;
+     font-weight: 400;
+     margin-bottom: 15px;
+     color: #595f6f;
+}
+
+.InquiryFormSelect {
+     background: url("../../../assets/images/Grey_Arrow.svg") no-repeat;
+     background-position: 95%;
+     width: 100%;
+     height: 50px;
+     border: solid 1px #bfc4ce;
+     border-radius: 5px;
+     color: #595f6f;
+     padding-left: 30px;
+     appearance: none;
+     cursor: pointer;
+     -moz-appearance: none;
+     -webkit-appearance: none;
+}
+
+.InquiryFormInput {
+     width: 100%;
+     height: 50px;
+     padding-left: 30px;
+     border: solid 1px #bfc4ce;
+     color: #595f6f;
+     border-radius: 5px;
+}
+
+.InquiryFormInput:focus,
+.InquiryFormSelect:focus {
+     outline: none;
+     border: solid 1px #979797;
+}
+
+.InquiryFormInput::placeholder {
+     font-size: 16px;
+     font-weight: 400;
+     color: #595f6f;
+}
+
+.InquiryFormButton {
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+     align-items: center;
+     height: 50px;
+     padding: 15px 30px;
+     border-radius: 5px;
+     box-shadow: 20px 20px 60px 0 rgb(0 0 0 / 40%);
+     background-color: #ec1c24;
+     outline: none;
+     border: none;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 1;
+     letter-spacing: normal;
+     width: max-content;
+     margin-top: 40px;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
+}
+
+.InquiryFormButton img {
+     margin-top: 3px;
+     margin-left: 15px;
+}
+
+.InquiryFormButtonContainer {
+     display: flex;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+}
+
+input[type="number"] {
+     -moz-appearance: textfield;
+}
+
+.InquiryFormInputError {
+     border-radius: 5px 5px 0px 0px;
+     border: 1px solid #ec1c24 !important;
+     background-color: rgba(236, 28, 36, 0.04) !important;
+}
+
+.InquiryFormInputErrorAllRequired {
+     border-radius: 5px !important;
+}
+
+.InquiryFormSelectError {
+     border-radius: 5px 5px 0px 0px;
+     border: 1px solid #ec1c24 !important;
+     background-color: rgba(236, 28, 36, 0.04) !important;
+}
+
+.InquiryFormSelectErrorAllRequired {
+     border-radius: 5px !important;
+}
+
+.InquiryFormInputErrorMessage {
+     font-size: 14px;
+     font-weight: 400;
+     width: 100%;
+     height: 30px;
+     color: #fff;
+     background-color: #ec1c24;
+     display: flex;
+     border-radius: 0px 0px 5px 5px;
+     margin-bottom: 15px;
+     justify-content: flex-end;
+     align-items: center;
+     padding-right: 10px;
+}
+
+.InquiryFormAllRequiredErrorMessage {
+     font-size: 16px;
+     font-weight: 400;
+     width: 100%;
+     height: 30px;
+     color: #fff;
+     background-color: #ec1c24;
+     display: flex;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     justify-content: flex-start;
+     align-items: center;
+     padding-left: 10px;
+}
+
+div[lang="ar"] .InquiryTitle {
+     text-align: right;
+}
+
+div[lang="ar"] .InquiryContactTitle {
+     text-align: right;
+}
+
+div[lang="ar"] .InquiryFormRow {
+     text-align: right;
+}
+
+div[lang="ar"] .InquiryFormSelect {
+     background-position: 5%;
+     padding-left: unset;
+     padding-right: 30px;
+}
+
+div[lang="ar"] .InquiryFormAllRequiredErrorMessage {
+     padding-left: unset;
+     padding-right: 10px;
+}
+
+div[lang="ar"] .InquiryFormInput {
+     padding-left: unset;
+     padding-right: 30px;
+}
+
+div[lang="ar"] .InquiryFormInputErrorMessage {
+     padding-left: 10px;
+     padding-right: unset;
+}
+
+div[lang="ar"] .InquiryFormButton img {
+     margin-left: unset;
+     margin-right: 15px;
+     transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+     .InquiryForm {
+          width: 100%;
+          margin: auto;
+     }
+
+     .InquiryFormButtonContainer {
+          justify-content: center;
+     }
+
+     .InquiryTitle {
+          margin-top: 30px;
+     }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+     .InquiryForm {
+          width: 100%;
+          margin: auto;
+     }
+
+     .InquiryFormButtonContainer {
+          justify-content: center;
+     }
+
+     .InquiryTitle {
+          margin-top: 30px;
+     }
+}

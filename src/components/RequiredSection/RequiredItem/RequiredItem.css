@@ -1,0 +1,26 @@
+.RequiredDocumentationItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.RequiredDocumentationItemTitle {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: left;
+  color: #595f6f;
+  width: max-content;
+}
+
+.RequiredDocumentationItemSubTitle {
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  color: #595f6f;
+  width: max-content;
+}

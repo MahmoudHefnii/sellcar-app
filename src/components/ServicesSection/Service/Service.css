@@ -1,0 +1,81 @@
+.ServiceContainer {
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid #DDDFE7;
+  border-radius: 5px;
+}
+
+.ServiceContent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.ServiceDetails {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.ServiceDetailsTitle {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  color: #595F6F;
+}
+
+.ServiceDetailsSubTitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  color: #595F6F;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .ServiceContainer {
+    padding: 10px;
+  }
+
+  .ServiceContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+
+  .ServiceDetails {
+    justify-items: center;
+  }
+
+  .ServiceDetailsSubTitle {
+    width: 80%;
+    text-align: center;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+  .ServiceContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+
+  .ServiceDetails {
+    justify-items: center;
+  }
+
+  .ServiceDetailsSubTitle {
+    width: 80%;
+    text-align: center;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .ServiceContainer {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,225 @@
+.StartToday {
+     padding: 50px 10%;
+}
+.Container {
+     display: flex;
+     flex-direction: column;
+     margin: 150px 0 100px 0;
+}
+
+.Content {
+     margin-top: 50px;
+     display: flex;
+}
+
+.Video {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     width: 50%;
+}
+
+.VideoTitle {
+     font-size: 28px;
+     font-weight: bold;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 1.32;
+     letter-spacing: -0.58px;
+     text-align: left;
+     color: #000000;
+     margin-bottom: 10px;
+}
+
+.VideoSubTitle {
+     font-size: 18px;
+     font-weight: 500;
+     font-stretch: normal;
+     font-style: normal;
+     text-align: left;
+     color: #595f6f;
+     margin-bottom: 30px;
+}
+
+.VideoDetails {
+     font-size: 16px;
+     font-weight: normal;
+     color: #595f6f;
+     display: block;
+     text-align: left;
+     margin-bottom: 18px;
+}
+
+.FooterVideoDetails {
+     font-size: 16px;
+     font-weight: 500;
+     color: #595f6f;
+     display: block;
+     text-align: left;
+     margin-bottom: 18px;
+}
+
+.VideoHead {
+     margin-bottom: 45px;
+     position: relative;
+     cursor: pointer;
+}
+
+.VideoHeadImg {
+     max-width: 100%;
+     display: block;
+}
+
+.VideoHeadIcon {
+     position: absolute;
+     left: 30%;
+     top: 15%;
+}
+
+.Form {
+     width: 50%;
+     padding-left: 75px;
+}
+div[lang="ar"] .Form {
+     padding-left: unset;
+     padding-right: 75px;
+}
+div[lang="ar"] .ButtonContainer img {
+     transform: translateX(-15px);
+}
+
+div[lang="ar"] .VideoTitle,
+div[lang="ar"] .VideoSubTitle,
+div[lang="ar"] .VideoDetails,
+div[lang="ar"] .FooterVideoDetails {
+     text-align: right;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+     .Container {
+          margin: 50px 0 50px 0;
+     }
+
+     .Content {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          margin-top: 10px;
+     }
+
+     .VideoContainer {
+          margin-top: 25px;
+     }
+
+     .Video {
+          width: 100%;
+          align-items: center;
+          text-align: center;
+          justify-content: space-around;
+     }
+
+     .VideoHeadIcon {
+          left: 20%;
+          top: 0;
+     }
+
+     .VideoTitle {
+          align-items: center;
+          text-align: center;
+          font-size: 22px;
+     }
+
+     .VideoSubTitle {
+          align-items: center;
+          text-align: center;
+          font-size: 15px;
+     }
+
+     .VideoDetails {
+          align-items: center;
+          text-align: center;
+          font-size: 13px;
+     }
+
+     .FooterVideoDetails {
+          align-items: center;
+          text-align: center;
+          font-size: 13px;
+     }
+
+     .Form {
+          width: 100%;
+          padding-left: 0;
+     }
+     div[lang="ar"] .Form {
+          padding-left: unset;
+          padding-right: unset;
+     }
+
+     .VideoHead {
+          margin-bottom: 0;
+     }
+
+     div[lang="ar"] .VideoContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+     .Container {
+          margin: 50px 0 50px 0;
+     }
+
+     .Content {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+     }
+
+     .Video {
+          width: 100%;
+          align-items: center;
+          text-align: center;
+          justify-content: space-around;
+     }
+
+     .VideoTitle {
+          align-items: center;
+          text-align: center;
+     }
+
+     .VideoSubTitle {
+          align-items: center;
+          text-align: center;
+     }
+
+     .VideoDetails {
+          align-items: center;
+          text-align: center;
+     }
+
+     .FooterVideoDetails {
+          align-items: center;
+          text-align: center;
+     }
+
+     .Form {
+          width: 100%;
+          padding-left: 0;
+     }
+     div[lang="ar"] .Form {
+          padding-left: unset;
+          padding-right: unset;
+     }
+     .VideoHead {
+          margin-bottom: 0;
+     }
+
+     div[lang="ar"] .VideoContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+}

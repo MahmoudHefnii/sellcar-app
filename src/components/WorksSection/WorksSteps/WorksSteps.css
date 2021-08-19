@@ -1,0 +1,99 @@
+.WorksStepsContainer {
+     display: grid;
+     grid-template-columns: 1fr 7fr;
+     grid-column-gap: 0px;
+     justify-items: start;
+     align-items: center;
+     margin: 50px 0;
+}
+
+.WorksStepsNumber {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     box-shadow: 20px 20px 60px 0 rgb(0 0 0 / 40%);
+     background-image: linear-gradient(225deg, #ec1c24, #f91c3d);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     font-size: 24px;
+     font-weight: bold;
+}
+.WorksStepsContent {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-left: 20px;
+}
+div[lang="ar"] .WorksStepsContent {
+     margin-left: unset;
+     margin-right: 20px;
+}
+
+.WorksStepsTitle {
+     font-size: 16px;
+     font-weight: 500;
+     font-stretch: normal;
+     font-style: normal;
+     color: #ffffff;
+}
+
+.WorksStepsSubTitle {
+     font-size: 14px;
+     font-weight: 400;
+     font-stretch: normal;
+     font-style: normal;
+     color: #ffffff;
+     margin-top: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 360px) {
+     .WorksStepsTitle {
+          font-size: 14px;
+     }
+
+     .WorksStepsSubTitle {
+          font-size: 12px;
+     }
+
+     .WorksStepsContainer {
+          grid-template-columns: 1fr 7fr;
+     }
+
+     .WorksStepsNumber {
+          font-size: 18px;
+     }
+
+     div[lang="ar"] .WorksStepsContainer {
+          grid-template-columns: 1fr 4fr;
+     }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 575px) {
+     .WorksStepsTitle {
+          font-size: 14px;
+     }
+
+     .WorksStepsSubTitle {
+          font-size: 12px;
+     }
+
+     .WorksStepsContainer {
+          grid-template-columns: 1fr 7fr;
+     }
+
+     .WorksStepsNumber {
+          font-size: 18px;
+     }
+
+     div[lang="ar"] .WorksStepsContainer {
+          grid-template-columns: 1fr 5fr;
+     }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+     .WorksStepsContainer {
+          grid-template-columns: 1fr 7fr;
+     }
+}

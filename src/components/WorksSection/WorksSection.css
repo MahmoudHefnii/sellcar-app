@@ -1,0 +1,127 @@
+.WorksSectionContainer {
+     display: grid;
+     grid-template-columns: repeat(2, 50%);
+     height: calc(100vh - 145px);
+}
+.Steps {
+     background-color: #323e47;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 50px 20%;
+}
+
+.StepsHead {
+     margin-bottom: 50px;
+     margin-top: 50px;
+}
+
+.Title {
+     font-size: 35px;
+     font-weight: bold;
+     font-stretch: normal;
+     font-style: normal;
+     color: #ffffff;
+}
+.SubTitle {
+     font-size: 18px;
+     font-weight: normal;
+     font-stretch: normal;
+     font-style: normal;
+     color: #ffffff;
+     margin-top: 10px;
+}
+
+.Sold {
+     background: url("../../assets/images/Red_Bg.png");
+     background-color: rgba(242, 28, 47, 0.9);
+     background-size: cover;
+     height: 100%;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+.Sold img {
+     margin-bottom: 15px;
+}
+
+.SoldTitle {
+     font-size: 30px;
+     font-weight: bold;
+     font-stretch: normal;
+     font-style: normal;
+     color: #ffffff;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+}
+
+.SoldSubTitle {
+     font-size: 20px;
+     font-weight: 400;
+     font-stretch: normal;
+     font-style: normal;
+     color: #ffffff;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+     .WorksSectionContainer {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          height: unset;
+     }
+
+     .StepsHead {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 0px;
+     }
+
+     .Steps {
+          padding: 0px 25px;
+     }
+
+     .Sold {
+          padding: 0px 25px;
+     }
+
+     .Title {
+          font-size: 25px;
+     }
+     .SubTitle {
+          font-size: 15px;
+     }
+
+     .SoldTitle {
+          font-size: 25px;
+     }
+
+     .SoldSubTitle {
+          font-size: 17px;
+     }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+     .WorksSectionContainer {
+          grid-template-columns: 1fr;
+          grid-template-rows: 2fr 1fr;
+          height: unset;
+     }
+
+     .StepsHead {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+     .Steps {
+          padding: 50px;
+     }
+
+     .Sold {
+          padding: 100px 50px;
+     }
+}

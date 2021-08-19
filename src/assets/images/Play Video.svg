@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="230" viewBox="0 0 230 230">
+  <defs>
+    <filter id="Bg_Circle" x="0" y="0" width="230" height="230" filterUnits="userSpaceOnUse">
+      <feOffset dx="20" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Play_Video" data-name="Play Video" transform="translate(70 70)">
+    <g transform="matrix(1, 0, 0, 1, -70, -70)" filter="url(#Bg_Circle)">
+      <rect id="Bg_Circle-2" data-name="Bg Circle" width="50" height="50" rx="25" transform="translate(70 70)" fill="#ec1c24"/>
+    </g>
+    <g id="Play_Icon" data-name="Play Icon" transform="translate(18 17)">
+      <path id="Shape" d="M13.365,6.841,2.268.158A2.072,2.072,0,0,0,1.225,0C-.005,0,0,.91,0,1.14V14.8C0,15-.005,15.94,1.225,15.94a2.073,2.073,0,0,0,1.043-.156L13.365,9.1c.911-.518.753-1.13.753-1.13S14.275,7.359,13.365,6.841Z" transform="translate(0.052 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

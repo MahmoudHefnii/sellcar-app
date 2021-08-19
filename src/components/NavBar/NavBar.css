@@ -1,0 +1,38 @@
+.NavBarContainer {
+  padding: 25px 10%;
+}
+.NavBarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavBarLanguageButton {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  padding: 12px 33px 15px 31px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ec1c24;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .NavBarContainer {
+    padding: 20px 5%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 799px) {
+  .NavBarContainer {
+    padding: 35px 5%;
+  }
+}
